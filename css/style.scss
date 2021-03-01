@@ -1,0 +1,51 @@
+@import"./reseter&mixin";
+@import"./menu";
+@import"./banner";
+@import"./about";
+@import"./education";
+@import"./warm-line";
+@import"./covid-support";
+@import"./fundraising";
+@import"./our-team";
+@import"./footer";
+
+body{color: #27226B;}
+
+header{
+    height: 10vh;@include flexx;align-items: center;justify-content: space-between;background-color: transparent;position: relative;
+    img{margin-left: 20px;width: 100px;}
+    #logo{z-index: 10;}
+    .nav{
+        display: none;background-color: #27226B;height: 100px;width: 100%;padding-left: 50px;border-radius: 0 0 0 100px;padding-top: 15px;text-transform: capitalize;
+        a{font-size: 23px;font-family: 'light';color: white;padding: 20px;}
+       
+    }
+  
+}
+
+
+@media screen and (min-width: 1024px){
+    header{
+        .nav{display: list-item;width: 50%;display: flex;
+       a{ font-size: 20px;padding: 10px;;}
+        }
+    }
+
+}
+
+
+@media screen and (min-width:1200px){
+
+    header{
+        height: 10vh;@include flexx;align-items: center;justify-content: space-between;background-color: transparent;position: relative;;
+        img{margin-left: 50px;}
+        .nav{
+            background-color: #27226B;height: 100px;width: 680px;padding-left: 50px;border-radius: 0 0 0 100px;padding-top: 15px;text-transform: capitalize;
+            a{font-size: 23px;font-family: 'light';color: white;padding: 20px;}
+        }
+    }
+
+    section{
+        padding-top: 50px;padding-bottom: 50px;
+    }
+}

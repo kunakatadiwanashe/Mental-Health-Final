@@ -1,0 +1,112 @@
+.our-team{
+
+    .inner{
+        display: flex;flex-wrap: wrap;
+       #join,#speak{
+           h2{font-size: 34px;font-family: 'regular';}
+           p{font-size: 22px;font-family: 'regular';padding:10px 0 20px 0;width: 100%;}
+           button{width: 100%;height: 55px;border: 1px solid white;background-color: transparent;color: white;font-size: 22px;font-family: 'regular';}
+       }
+    .join{
+        width: 100%;height: 325px;background-color: #0493A3;color: white;position: relative;padding: 30px;text-align: center;
+       p{text-shadow: 1px 1px rgb(0, 0, 0);}
+        #team{position: absolute;bottom: 0;right: 0px;width: 289px;height: 209px;opacity: .6;}
+    }
+
+    .speak{
+        width: 100%;background-color: #27226B;color: white;text-align: center;padding: 20px;
+        #tell{text-align: center;width: 100%}
+    }
+ }
+
+// inner -2
+
+ .inner2{
+     @include flexx;padding-top: 30px;
+     #advocate, #volunteer{
+         width: 90%;height: 281px;border-radius: 10px;border: 2px solid rgb(255, 255, 255);margin: 0 auto;@include flexcenter;padding: 0 20px 0 20px;text-align: center;
+         h2{font-size: 34px;font-family: 'regular';}
+         p{font-size: 22px;font-family: 'regular';}
+         button{width: 284px;height: 55px;border: 1px solid white;background-color: transparent;color: white;font-size: 22px;font-family: 'regular';}
+     }
+    .advocate{
+        background-color: #27226B; color: white;box-shadow: -1px -1px 1px 15px #27226B;
+    }
+
+    .image{
+      width: 100%;height: 339px;text-align: center;padding-top: 20px;margin-bottom: 50px;
+      img{width: 100%;height: 100%;}
+    }
+
+    .volunteer{
+        background-color: #0493A3;color: white;box-shadow: -1px -1px 1px 15px #0493A3;
+    }
+ }
+
+}
+
+
+@media screen and (min-width:768px){
+
+    .inner{
+        
+        #join, #speak{
+            width: 50%;@include flexcenter;
+            p{text-shadow: none;}
+        }
+       
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+
+    .our-team{
+
+        .inner{
+            display: flex;flex-wrap: nowrap;
+           #join,#speak{
+            display: block;
+               h2{font-size: 34px;font-family: 'regular';}
+               p{font-size: 22px;font-family: 'regular';padding:10px 0 20px 0;width: 377px;}
+               button{width: 284px;height: 55px;border: 1px solid white;background-color: transparent;color: white;font-size: 22px;font-family: 'regular';}
+           }
+        .join{
+            width: 900px !important;height: 325px;text-align: left;background-color: #0493A3;color: white;clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);position: relative;padding: 30px 0 40px 62px;
+           
+            #team{position: absolute;bottom: 0;right: 190px;width: 289px;height: 209px;}
+        }
+    
+        .speak{
+            width: 45%;text-align: right;background-color: #27226B;color: white;text-align: right;padding: 60px 30px 0 0;clip-path: polygon(0 0, 100% 0, 100% 100%, 25% 100%);margin-left: -150px;
+            #tell{width: 55%;text-align: right;margin-left: auto;}
+        }
+     }
+    
+
+
+
+     .inner2{
+         @include flexx;padding-top: 30px;
+         #advocate, #volunteer{
+             width: 25%;height: 281px;border-radius: 10px;border: 2px solid rgb(255, 255, 255);margin: 50px;@include flexcenter;padding: 0 30px 0 30px;text-align: center;
+             h2{font-size: 34px;font-family: 'regular';}
+             p{font-size: 22px;font-family: 'regular';}
+             button{width: 284px;height: 55px;border: 1px solid white;background-color: transparent;color: white;font-size: 22px;font-family: 'regular';}
+         }
+        .advocate{
+            background-color: #27226B; color: white;box-shadow: -1px -1px 1px 15px #27226B;
+        }
+    
+        .image{
+          width: 35%;height: 339px;text-align: center;padding-top: 20px;
+        }
+    
+        .volunteer{
+            background-color: #0493A3;color: white;box-shadow: -1px -1px 1px 15px #0493A3;
+        }
+     }
+    }
+    
+    
+}

@@ -1,0 +1,29 @@
+.humbuger-menu{background-color: #0493A3;padding: 3px;width: 100%;z-index: 3;position: absolute;top: 0;
+    ul{list-style: none;overflow: hidden;
+      a{display: block;text-decoration: none;padding: 20px;color: white;text-transform: capitalize;}
+    
+     }
+    
+    
+     .logo{float: left;display: block;font-size: 2em;padding: 10px 20px;color: white;}
+     .menu{clear: both;max-height: 0;transition: max-height .2s ease-out;}
+    .menu-icon{padding: 20px 15px;border: 2px solid white;position: relative;float: right;cursor: pointer;;
+        .nav-icon{background: #fff;display: block;height: 2px;width: 18px;position: relative;transition: background .2s ease-out;}
+        .nav-icon:before{background: #fff;content: "";display: block;width: 100%;height: 100%;position: absolute;top: 5px;transition: all .2s ease-out;}
+        .nav-icon:after{background: #fff;content: "";display: block;width: 100%;height: 100%;position: absolute;top: -5px;transition: all .2s ease-out;}
+       }
+    
+       .menu-btn{display: none;}
+       .menu-btn:checked ~.menu{max-height: 240px;}
+       .menu-btn:checked ~.menu-icon .nav-icon{background-color: transparent ;}
+       .menu-btn:checked ~.menu-icon .nav-icon:before{transform: rotate(-45deg);top: 0;}
+       .menu-btn:checked ~.menu-icon .nav-icon:after{transform: rotate(45deg);top: 0;}
+      
+    
+    }
+ 
+
+@media screen and (min-width:1024px){
+
+    .humbuger-menu{display: none;}
+}
